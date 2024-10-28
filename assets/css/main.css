@@ -1273,3 +1273,72 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+  /* Header Responsif */
+  .header {
+      width: 100%;
+      height: auto;
+      position: relative;
+      border-right: none;
+      padding: 10px 0;
+  }
+  
+  .header .profile-img img {
+      width: 80px;
+  }
+
+  .header .logo h1 {
+      font-size: 20px;
+  }
+
+  /* Navigasi */
+  .navmenu ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .navmenu a {
+      padding: 10px 15px;
+  }
+  
+  /* Hero Section */
+  .hero {
+      min-height: 50vh;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .hero h2 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 18px;
+  }
+
+  /* About & Portfolio */
+  .about .content, .portfolio .portfolio-content {
+      text-align: center;
+  }
+
+  .about .content h2, .portfolio .portfolio-filters li {
+      font-size: 24px;
+  }
+  
+  .portfolio .portfolio-item {
+      width: 100%;
+  }
+
+  /* Contact */
+  .contact .info-wrap {
+      padding: 15px;
+      text-align: center;
+  }
+  
+  .contact .php-email-form {
+      padding: 15px;
+  }
+}
